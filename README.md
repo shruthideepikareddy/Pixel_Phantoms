@@ -1,3 +1,18 @@
+## Table of Contents
+- [👻 Pixel Phantoms — From Students, For Students](#-pixel-phantoms--from-students-for-students)
+- [🌟 Project Overview](#-project-overview)
+- [🚀 Why This Project Matters](#-why-this-project-matters)
+- [📦 How to Install & Run Locally](#-how-to-install--run-locally)
+- [📁 Project Structure](#-project-structure)
+- [🎨 Screenshot / Demo](#-screenshot--demo)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [🧑‍💻 Core Committee — 2024–25](#-core-committee--202425)
+- [🛠 Tech Stack](#-tech-stack)
+- [🗺️ Project Roadmap](#-project-roadmap)
+- [📝 Issues](#-issues)
+- [📌 License](#-license)
+- [🔥 Contributors](#-contributors)
+- [📫 Contact](#-contact)
 
 
 # 👻 Pixel Phantoms — From Students, For Students
