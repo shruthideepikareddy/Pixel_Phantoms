@@ -16,10 +16,11 @@ function initDate() {
     }
 }
 
-// Reveal animation (basic)
+// Reveal animation (use CSS delay where available)
 function initScrollReveal() {
     const reveals = document.querySelectorAll('.reveal');
-    reveals.forEach((r, i) => setTimeout(() => r.classList.add('active'), i * 100));
+    // Add active class immediately and rely on CSS animation-delay for staggering
+    reveals.forEach(r => r.classList.add('active'));
 }
 
 // Smooth scrolling for anchor links in sidebar
@@ -80,6 +81,17 @@ function initScrollSpy() {
     }, obsOptions);
 
     sections.forEach(s => observer.observe(s));
+
+    // Ensure there is an active state when scrolled to very top (back to top)
+    const backToTopLink = document.querySelector('.sidebar-links a[href="#main-tutorials"]');
+    window.addEventListener('scroll', () => {
+        if (!sections.length) return;
+        const topThreshold = sections[0].offsetTop - 120;
+        if (window.scrollY < topThreshold) {
+            document.querySelectorAll('.sidebar-links a.active').forEach(a => a.classList.remove('active'));
+            if (backToTopLink) backToTopLink.classList.add('active');
+        }
+    });
 }
 
 // Debug
